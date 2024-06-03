@@ -43,7 +43,7 @@ function Home() {
             {promocao.map((product, index) => (
               <div key={index} className="produto-container-prisncipal">
                 <div className="produto-prisncipal">
-                  <Link to={`/paginapd/${product.id}`}>
+                  <Link to={`/paginapd/${product.id}`}> 
                     <img src={product.image} alt={product.name} className="img-fluid" />
                   </Link>
                   <span>{product.name}</span>

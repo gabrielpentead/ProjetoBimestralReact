@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useCallback } from 'react'; // useState para rastrear o texto digitado no campo de pesquisa.
+import { Link } from 'react-router-dom'; // useCallback que atualiza o estado com o valor digitado no campo de pesquisa.
 import './Header.css';
 import Logo from './LogoFeiraGreen.png'
 import Carrinho from './carrinho-carrinho.png'
@@ -13,7 +13,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 
-const filterData = (searchQuery) => {
+const filterData = (searchQuery) => { //rastrea o texto digitado no campo de pesquisa
   return data.filter((product) => product.name.toLowerCase().includes(searchQuery.toLowerCase()));
 };
 
@@ -21,7 +21,7 @@ function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleSearch = useCallback((e) => {
+  const handleSearch = useCallback((e) => { // atualiza o estado com o valor digitado no campo de pesquisa
     setSearchQuery(e.target.value);
   }, []);
 
