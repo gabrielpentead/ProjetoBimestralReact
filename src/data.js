@@ -195,7 +195,7 @@ export const data = [
     },
     {
         id: 25,
-        image: '/imagens/pão.jpg',
+        image: '/imagens/pao.jpg',
         name: 'Pão Caseiro',
         price: 9.99,
         unit: 'Unidade',
@@ -314,11 +314,36 @@ export const data = [
         type: 'fruta'
     },
     {
-        id: 40,
-        image: '/imagens/milho.jpg',
-        name: 'Milho',
-        price: 20.99,
-        unit: 'kg',
-        type: 'hortalica'
-    }
+      id: 40,
+      image: '/imagens/milho.jpg',
+      name: 'Milho',
+      price: 20.99,
+      unit: 'kg',
+      type: 'hortalica'
+  },
+  {
+      id: 41,
+      image: '/imagens/cebola roxa.jpg',
+      name: 'Cebola Roxa',
+      price: 8.99,
+      unit: 'kg',
+      type: 'legume'
+  },
+  {
+    id: 42,
+    image: '/imagens/beterrabas.jpg',
+    name: 'Beterraba',
+    price: 6.99,
+    unit: 'kg',
+    type: 'legume'
+},
+{
+  id: 43,
+  image: '/imagens/mandioca.jpg',
+  name: 'Mandioca',
+  price: 10.99,
+  unit: 'kg',
+  type: 'legume'
+}
+  
 ];
