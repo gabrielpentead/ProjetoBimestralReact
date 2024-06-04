@@ -7,7 +7,6 @@ import Pesquisa from './pesquisa.png'
 import Usuario from './usuario.png'
 import { data } from '../../data';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';

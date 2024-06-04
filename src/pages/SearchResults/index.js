@@ -15,7 +15,7 @@ function SearchResults() {
             <li key={produto.id}>
               <div className="col-12">
                 <div className="row">
-                    <div key={searchQuery} className="produto-container-prisncipal">
+                    <div key={searchQuery} className="produto-container-prisncipal"> 
                       <div className="produto-prisncipal">
                         <Link to={`/paginapd/${produto.id}`} >
                           <img src={produto.image} alt={produto.name} className="img-fluid" />

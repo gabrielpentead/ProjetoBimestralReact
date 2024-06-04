@@ -2,23 +2,28 @@ import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import './Home.css';
 import { data } from '../../data';
+import { useState } from 'react';
 
 function Home() {
   const promocao = data.filter((product) => product.type === 'fruta');
+  const [index, setIndex] = useState(0);
+  const handleSearch = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
 
   return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
           <div className="d-flex justify-content-center">
-            <Carousel id="carousel" className="d-flex" indicators={false} interval={3000}>
-              <Carousel.Item className="d-inline-block">
+            <Carousel activeIndex={index} onSelect={handleSearch} interval={3000}>
+              <Carousel.Item >
                 <img src="imagens/baner_I.png" className="d-block" alt="I" width={'100%'} />
               </Carousel.Item>
-              <Carousel.Item className="d-inline-block">
+              <Carousel.Item >
                 <img src="imagens/baner_II.png" className="d-block" alt="II" width={'100%'} />
               </Carousel.Item>
-              <Carousel.Item className="d-inline-block">
+              <Carousel.Item >
                 <img src="imagens/baner_III.png" className="d-block" alt="III" width={'100%'} />
               </Carousel.Item>
             </Carousel>
